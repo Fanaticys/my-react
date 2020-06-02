@@ -3,13 +3,13 @@ import React, { useContext, memo } from 'react'
 import ContextRenderingContext from './ContextRenderingContext';
 
 const ConsumerComponent = () => {
-  const value = useContext(ContextRenderingContext);
+  const { addData } = useContext(ContextRenderingContext);
 
-  console.log(value);
+  console.log(addData);
 
   return (
     <div>
-      <button onClick={() => value.addData(1)}>Add</button>
+      <button onClick={() => addData(1)}>Add</button>
     </div>
   )
 }
