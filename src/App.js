@@ -7,6 +7,7 @@ import RenderUnderstanding from './modules/renderUnderstanding/components/Render
 import ReactKeys from './modules/reactKeys/components/ReactKeys';
 import ReduxTest from './modules/reduxTest/components/ReduxTest';
 import ContextPreventRerender from './modules/contextPreventRerender/components/App';
+import ExampleApp from './modules/exampleApp/components/ExampleApp';
 import ReactQuilContainer from './modules/reactQuill/components/ReactQuilContainer';
 import Index from './modules/index/components/Index';
 import store from './modules/redux/store';
@@ -21,6 +22,7 @@ const Routes = () => useRoutes([
     children: [
       { index: true, element: <Index /> },
       { path: 'context-rendering', element: <ContextRendering /> },
+      { path: 'example-app', element: <ExampleApp /> },
       { path: 'context-prevent-rerender', element: <ContextPreventRerender /> }
     ],
   },
